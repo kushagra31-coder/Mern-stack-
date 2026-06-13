@@ -1,73 +1,43 @@
-# React + TypeScript + Vite
+# Secure Banking Dashboard - TSX & Typed Components: Mastering Type Safety
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+A secure banking dashboard built with React and TypeScript,
+implementing advanced type safety patterns for financial
+transactions and budget tracking.
 
-Currently, two official plugins are available:
+## Features
+- Strictly typed transaction records
+- Type-safe currency handling (USD, EUR, GBP)
+- Immutable state with useReducer
+- Class and functional components with full type safety
+- Prevents negative balance through type-safe checks
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Components
+- **TransactionList** - Functional component displaying
+  all transactions with color coding
+- **TransactionForm** - Class component for adding new
+  transactions with type-safe form handling
+- **BudgetTracker** - Manages income and expenses using
+  useReducer with typed actions
 
-## React Compiler
+## Types
+- **Transaction** - Core transaction interface
+- **IncomeEntry** - Typed income records
+- **ExpenseEntry** - Typed expense records
+- **BudgetState** - Reducer state interface
+- **BudgetAction** - Discriminated union for actions
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
+- React 18
+- TypeScript
+- Vite
 
-## Expanding the ESLint configuration
+## Setup
+npm install
+npm run dev
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Learning Outcomes
+- Type-safe props and state management
+- useReducer with TypeScript
+- Class components with generics
+- Immutable state patterns
