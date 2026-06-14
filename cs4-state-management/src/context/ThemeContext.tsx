@@ -1,4 +1,4 @@
-// eslint-disable-next-line react-refresh/only-export-components
+/* eslint-disable react-refresh/only-export-components */
 import React, { useState, useContext } from 'react';
 
 interface ThemeContextType {
