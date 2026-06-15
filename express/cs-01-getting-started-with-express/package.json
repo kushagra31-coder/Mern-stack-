@@ -1,0 +1,20 @@
+{
+  "name": "cs-01-getting-started-with-express",
+  "version": "1.0.0",
+  "description": "Greenfield Community Center Express Case Study",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "author": "Akaza",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  },
+  "keywords": [],
+  "type": "commonjs"
+}
