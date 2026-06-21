@@ -302,5 +302,3 @@ This repository represents a practical learning journey through TypeScript, Reac
 
 **Kushagra Singh Tomar**
 
-B.Tech CSIT Student
-Full Stack Developer | Software Engineering Enthusiast | Cybersecurity Learner
